@@ -1,0 +1,37 @@
+{
+    "name": "Replace with Cats",
+    "description": "Replace all images on websites with images of cats",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "js": [
+                "assets/js/contentScript.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://some-random-api.ml/*"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "./images/favicon.png",
+            "32": "./images/favicon.png",
+            "48": "./images/favicon.png",
+            "128": "./images/favicon.png"
+        }
+    },
+    "icons": {
+        "16": "./images/favicon.png",
+        "32": "./images/favicon.png",
+        "48": "./images/favicon.png",
+        "128": "./images/favicon.png"
+    }
+}
