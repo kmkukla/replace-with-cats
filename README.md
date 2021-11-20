@@ -6,6 +6,8 @@ Simple Chrome extension that replaces images on websites with images of cats.
 - ~~uses some-random-api.ml to get cat images~~
   Version 2.0 uses local images due to rate limitation on an API
 
+![image](preview.webp)
+
 ## How to use this extension?
 
 1.  Clone or download this repository.
